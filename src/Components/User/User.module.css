@@ -1,0 +1,12 @@
+
+.Profile{
+    display: flex;
+    gap:30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.Profile>img{
+    width:15%;
+    border-radius: 50%;
+}

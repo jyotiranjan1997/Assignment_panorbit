@@ -1,0 +1,45 @@
+.Landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Container {
+  width: 35%;
+  padding-bottom: 25px;
+  margin-top: 10%;
+  border: 1px solid grey;
+  border-radius: 25px;
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.Container > div:nth-child(1) {
+  background-color: rgb(238, 236, 236);
+  padding: 15px;
+  text-align: center;
+
+  border-radius: 25px 25px 0 0;
+}
+.Container > div:nth-child(2) {
+  height: 300px;
+  overflow: auto;
+  padding: 10px 25px 12px 25px;
+}
+
+.line {
+  color: rgb(222, 222, 224);
+}
+
+@media screen and (min-width: 600px) and (max-width: 950px) {
+  .Container {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px) {
+  .Container {
+    width: 90%;
+  }
+}
