@@ -1,0 +1,29 @@
+.profile img {
+  width: 30%;
+  border-radius: 50%;
+}
+.profile > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  color: rgb(92, 91, 91);
+  font-weight: bold;
+}
+li {
+  font-size: 20px;
+  color: rgb(182, 180, 180);
+  display: block;
+  margin-top: 5px;
+}
+.profile>hr{
+    width:80%;
+
+}
+.company>h2{
+    text-align: center;
+}
+
