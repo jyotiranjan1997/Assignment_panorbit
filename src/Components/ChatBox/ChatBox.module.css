@@ -1,0 +1,50 @@
+.box {
+  width: 20%;
+  position: fixed;
+  bottom: 0%;
+  right: 2%;
+}
+.ChatBox {
+  background-color: rgb(66, 66, 201);
+  color: white;
+  padding: 0 25px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.box4 {
+  background-color: white;
+  height: 280px;
+  overflow: scroll;
+}
+.box3 {
+  display: none;
+}
+
+.box2 {
+  display: flex;
+  gap: 5px;
+  padding: 0 25px;
+  align-items: center;
+}
+
+.box2 > img {
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 680px) and (max-width: 1080px) {
+ .box{
+    width:30%;
+ }
+}
+
+@media screen and (min-width: 280px) and (max-width: 680px) {
+  .box{
+    width:40%;
+ }
+}

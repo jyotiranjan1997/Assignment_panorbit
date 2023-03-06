@@ -18,22 +18,28 @@ export default function LandingPage() {
   }, [loading]);
 
   return (
-    <div className={Styles.Landing}>
-      <div className={Styles.Container}>
-        <div>
-          <h4>Select an Account</h4>
-        </div>
-        <div>
-          {data.map((el) => (
-            <div key={el.id}>
-              <User
-                {...el}
-              />
-              <hr className={Styles.line} />
+    <div>
+      <div className={Styles.curve}></div>
+
+      {error ? (
+        <h1>Something went wrong fetching data </h1>
+      ) : (
+        <div className={Styles.Landing}>
+          <div className={Styles.Container}>
+            <div>
+              <h4>Select an Account</h4>
             </div>
-          ))}
+            <div>
+              {data.map((el) => (
+                <div key={el.id}>
+                  <User {...el} />
+                  <hr className={Styles.line} />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }

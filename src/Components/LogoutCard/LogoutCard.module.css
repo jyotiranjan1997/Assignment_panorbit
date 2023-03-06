@@ -1,0 +1,64 @@
+.Maindiv {
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 20%;
+  margin: auto;
+  border-radius: 25px;
+  position: fixed;
+  left: 75%;
+  background-color: white;
+  z-index: 15;
+}
+.Logout {
+  padding: 8px 15px;
+  color: white;
+  background-color: rgb(206, 85, 85);
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.Card > img {
+  width: 50%;
+  border-radius: 50%;
+}
+.Logout:hover {
+  cursor: pointer;
+}
+.Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Card > h6 {
+  color: rgb(218, 215, 215);
+  margin: 6px;
+  font-size: 15px;
+}
+
+.Card > h4 {
+  margin: 5px;
+  font-size: 18px;
+  color: rgb(77, 76, 76);
+}
+
+hr {
+  width: 90%;
+  color: rgb(202, 198, 198);
+  margin-bottom: 3px;
+}
+
+@media screen and (min-width: 680px) and (max-width: 980px) {
+  .Maindiv {
+    width: 30%;
+    left: 65%;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 680px) {
+  .Maindiv {
+    width: 70%;
+    left: 25%;
+  }
+}

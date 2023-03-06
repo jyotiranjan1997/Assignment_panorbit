@@ -14,8 +14,8 @@ function Map({ lat, lng }) {
 
   const [map, setMap] = React.useState(null);
   const center = {
-    lat: lat,
-    lng: lng,
+    lat: -37.3159,
+    lng: 81.1496,
   };
 
   const onLoad = React.useCallback(function callback(map) {
@@ -30,20 +30,20 @@ function Map({ lat, lng }) {
     setMap(null);
   }, []);
 
-//   return isLoaded ? (
-//     <GoogleMap
-//       mapContainerStyle={containerStyle}
-//       center={center}
-//       zoom={10}
-//       onLoad={onLoad}
-//       onUnmount={onUnmount}
-//     >
-//       {/* Child components, such as markers, info windows, etc. */}
-//       <Marker position={center}></Marker>
-//     </GoogleMap>
-//   ) : (
-//     <></>
-//   );
+  return isLoaded ? (
+    <GoogleMap
+      mapContainerStyle={containerStyle}
+      center={center}
+      zoom={10}
+      onLoad={onLoad}
+      onUnmount={onUnmount}
+    >
+      {/* Child components, such as markers, info windows, etc. */}
+      <Marker position={center}></Marker>
+    </GoogleMap>
+  ) : (
+    <></>
+  );
 }
 
 export default React.memo(Map);

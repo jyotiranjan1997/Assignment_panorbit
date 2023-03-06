@@ -1,10 +1,12 @@
-import { useState } from "react";
+
 import Styles from "./Profile.module.css";
 
 export default function Profile({setPage}) {
   
   return (
-    <div className={Styles.Sidebar}>
+    
+      
+       <div className={Styles.Sidebar}>
       <h4 onClick={() => setPage("Profile")}>Profile</h4>
       <hr />
       <h4 onClick={() => setPage("Posts")}>Posts</h4>
@@ -13,5 +15,7 @@ export default function Profile({setPage}) {
       <hr />
       <h4 onClick={() => setPage("ToDo")}>ToDo</h4>
     </div>
+    
+   
   );
 }

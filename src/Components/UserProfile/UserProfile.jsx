@@ -1,14 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Styles from "./UserProfile.module.css";
 
-export default function UserProfile({ data,company }) {
+export default function UserProfile({ data, company }) {
+  useEffect(() => {}, []);
 
-
-  useEffect(() => {
-    
-  }, []);
-
-  console.log(company);
   return (
     <div>
       <div className={Styles.profile}>
@@ -18,37 +13,44 @@ export default function UserProfile({ data,company }) {
         </div>
 
         <div>
-          <ul>
-            <li>
-              Username: <span>{data.username}</span>
-            </li>
-            <li>
-              Email :<span>{data.email}</span>
-            </li>
-            <li>
-              Phone: <span> {data.phone}</span>
-            </li>
-            <li>
-              Website: <span>{data.website}</span>
-            </li>
-          </ul>
+          <div className={Styles.Text}>
+            <p>username :</p>
+            <p>{data.username}</p>
+          </div>
+          <div className={Styles.Text}>
+            <p>email :</p>
+            <p>{data.email}</p>
+          </div>
+          <div className={Styles.Text}>
+            <p>Phone :</p>
+            <p>{data.phone}</p>
+          </div>
+          <div className={Styles.Text}>
+            <p>website :</p>
+            <p>{data.website}</p>
+          </div>
         </div>
         <hr />
-        <div className={Styles.company} >
+        <div className={Styles.company}>
           <h2>Company</h2>
-        {company ?  <div>
-            <ul>
-              <li>
-                Name :<span>{company.name}</span>
-              </li>
-              <li>
-                catchPhrase:<span> {company.catchPhrase}</span>{" "}
-              </li>
-              <li>
-                bs: <span> {company.bs} </span>{" "}
-              </li>
-            </ul>
-          </div> :""}
+          {company ? (
+            <div>
+              <div className={Styles.Text}>
+                <p>Name :</p>
+                <p>{company.name}</p>
+              </div>
+              <div className={Styles.Text}>
+                <p>catchPhrase :</p>
+                <p>{company.catchPhrase}</p>
+              </div>
+              <div className={Styles.Text}>
+                <p>bs :</p>
+                <p>{company.bs}</p>
+              </div>
+            </div>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </div>

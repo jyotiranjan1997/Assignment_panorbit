@@ -6,7 +6,7 @@
 .Container {
   width: 35%;
   padding-bottom: 25px;
-  margin-top: 10%;
+  margin-top: 15px;
   border: 1px solid grey;
   border-radius: 25px;
 
@@ -31,7 +31,12 @@
 .line {
   color: rgb(222, 222, 224);
 }
-
+.curve {
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(to bottom right, #294fcc, #ffffff);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
 @media screen and (min-width: 600px) and (max-width: 950px) {
   .Container {
     width: 50%;

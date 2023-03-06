@@ -2,7 +2,7 @@ import AllRoute from "./Routes/AllRoute";
 
 function App() {
   return (
-    <div>
+    <div >
       <AllRoute />
     </div>
   );

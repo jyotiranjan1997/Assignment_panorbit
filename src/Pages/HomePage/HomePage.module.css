@@ -1,12 +1,11 @@
-
 .home {
-width:95%;
-margin: auto;
-display: flex;
-justify-content: space-between;
-padding: 20px 0 20px 0;
-  
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
 }
-.RightSide{
-    width:80%;
+.RightSide {
+  width: 80%;
 }
+

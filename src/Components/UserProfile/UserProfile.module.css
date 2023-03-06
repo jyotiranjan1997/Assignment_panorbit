@@ -1,5 +1,5 @@
 .profile img {
-  width: 30%;
+  width: 40%;
   border-radius: 50%;
 }
 .profile > div:nth-child(1) {
@@ -9,21 +9,81 @@
   align-items: center;
 }
 
-span {
-  color: rgb(92, 91, 91);
-  font-weight: bold;
-}
-li {
-  font-size: 20px;
-  color: rgb(182, 180, 180);
-  display: block;
-  margin-top: 5px;
-}
-.profile>hr{
-    width:80%;
-
-}
-.company>h2{
-    text-align: center;
+.Text {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+  align-items: center;
+  grid-row-start: auto;
 }
 
+.Text {
+  text-align: right;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.Text > p:nth-child(1) {
+  color: rgb(180, 177, 177);
+  margin: 0;
+}
+.Text > p:nth-child(2) {
+  text-align: left;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+.company > h2 {
+  color: rgb(71, 71, 71);
+  text-align: center;
+}
+h2 {
+  color: rgb(71, 71, 71);
+}
+
+.profile > hr {
+  width: 80%;
+}
+
+.lng {
+  display: flex;
+  gap: 10px;
+}
+
+@media screen and (min-width: 680px) and (max-width: 980px) {
+  .Text {
+    font-size: 12px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 680px) {
+  .Text {
+    font-size: 10px;
+  }
+
+  .profile img {
+    width: 50%;
+  }
+
+  h2 {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 480px) {
+  .Text {
+    font-size: 7px;
+  }
+
+  .profile img {
+    width: 50%;
+  }
+
+  h2 {
+    font-size: 9px;
+  }
+}

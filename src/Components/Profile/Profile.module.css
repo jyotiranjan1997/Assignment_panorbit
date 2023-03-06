@@ -1,6 +1,6 @@
 .Sidebar {
   width: 18%;
-  background-color: #0049b7;
+  background: linear-gradient(to bottom, #0066ff 0%, #ff99cc 100%);
   color: white;
   height: 100vh;
   display: flex;
@@ -12,12 +12,15 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
+.Rightside{
+  height:100vh
+}
 .Sidebar > h4 {
   cursor: pointer;
   margin: 8px;
 }
 .Sidebar > hr {
-  width: 40%;
+  width: 50%;
   size: 0.2cm;
   color: rgb(223, 223, 223);
 }
@@ -27,8 +30,8 @@
   justify-content: space-between;
 }
 .UpperBar img {
-  width: 5%;
-  border-radius: 60%;
+  width: 6%;
+  border-radius: 50%;
 }
 
 .Img {
@@ -48,10 +51,47 @@
   color: rgb(224, 224, 224);
 }
 .user {
- 
   display: flex;
 }
-.user>div{
-  width:50%;
-  margin-left: 15px;
+.user > div {
+  width: 45%;
+}
+
+.logout {
+  display: none;
+}
+
+.logout2 {
+  display: block;
+}
+
+.hr {
+  width: 0;
+}
+
+.hamburger{
+  display: none;
+}
+
+@media screen and (min-width: 680px) and (max-width: 980px) {
+  .UpperBar img {
+    width: 6%;
+    height: 70%;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 680px) {
+  .Sidebar {
+    display: none;
+  }
+.UpperBar{
+  width:100%;
+}
+  .UpperBar img {
+    width: 15%;
+  }
+
+  .Img > p {
+    display: none;
+  }
 }
